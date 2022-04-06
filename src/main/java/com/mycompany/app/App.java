@@ -10,5 +10,10 @@ public class App
     public static void main( String[] args )
     {
         System.out.println( "Hello Remote World!" );
+        new Helper().ff = 3;
+    }
+
+    static class Helper {
+        public int ff;
     }
 }
