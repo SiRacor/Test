@@ -5,12 +5,17 @@
 
 package com.mycompany.app;
 
+import java.util.function.Supplier;
+import static java.lang.System.out;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello Remote World!" );
+        out.println( "Hello Remote World!" );
         new Helper().f2 = 3;
+        Supplier<String> sup = () -> new String("d");
+        out.println(sup.get());
     }
 
     static class Helper {
